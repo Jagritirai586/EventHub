@@ -710,3 +710,15 @@ textarea{
     background:#eab308;
     transform:translateY(-5px);
 }
+
+/* Active Navigation Link */
+
+nav ul li a.active{
+    color:#facc15;
+    border-bottom:2px solid #facc15;
+    padding-bottom:5px;
+}
+
+nav ul li a.active:hover{
+    color:#facc15;
+}
