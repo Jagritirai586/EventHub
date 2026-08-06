@@ -586,3 +586,25 @@ textarea{
     margin:10px 0;
     color:#374151;
 }
+
+/* Dark Mode - Why Choose Us */
+
+.dark-mode .why-us{
+    background:#1f2937;
+}
+
+.dark-mode .why-us h2{
+    color:#ffffff;
+}
+
+.dark-mode .why-card{
+    background:#374151;
+}
+
+.dark-mode .why-card h3{
+    color:#facc15;
+}
+
+.dark-mode .why-card p{
+    color:#e5e7eb;
+}
