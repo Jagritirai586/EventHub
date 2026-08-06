@@ -18,14 +18,51 @@ detailButtons.forEach(button => {
 
 const themeBtn = document.getElementById("theme-toggle");
 
+// Check saved theme
+if(localStorage.getItem("theme") === "dark"){
+    document.body.classList.add("dark-mode");
+    themeBtn.textContent = "☀️";
+}
+
+// Toggle theme
 themeBtn.addEventListener("click", () => {
 
     document.body.classList.toggle("dark-mode");
 
     if(document.body.classList.contains("dark-mode")){
         themeBtn.textContent = "☀️";
+        localStorage.setItem("theme", "dark");
     }else{
         themeBtn.textContent = "🌙";
+        localStorage.setItem("theme", "light");
     }
 
 });
+
+// Search Events
+
+const searchInput = document.getElementById("searchInput");
+
+if(searchInput){
+
+    searchInput.addEventListener("keyup", function(){
+
+        const filter = searchInput.value.toLowerCase();
+
+        const cards = document.querySelectorAll(".event-card");
+
+        cards.forEach(card =>{
+
+            const title = card.querySelector("h3").textContent.toLowerCase();
+
+            if(title.includes(filter)){
+                card.style.display = "block";
+            }else{
+                card.style.display = "none";
+            }
+
+        });
+
+    });
+
+}
