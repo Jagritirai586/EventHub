@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Ticket - EventHub</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">
+        <h1>EventHub</h1>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="booking.html">Booking</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="booking">
+
+    <h2>Book Your Ticket</h2>
+
+    <form id="bookingForm">
+
+        <label>Full Name</label>
+        <input type="text" id="name" placeholder="Enter your full name">
+
+        <label>Email</label>
+        <input type="email" id="email" placeholder="Enter your email">
+
+        <label>Select Event</label>
+        <select id="event">
+            <option value="">Choose an Event</option>
+            <option>Music Concert</option>
+            <option>Cricket Match</option>
+            <option>Movie Premiere</option>
+        </select>
+
+        <label>Number of Tickets</label>
+        <input type="number" id="tickets" min="1" placeholder="Enter ticket count">
+
+        <button type="submit" class="btn">Book Ticket</button>
+
+    </form>
+
+</section>
+
+<footer>
+    <p>&copy; 2026 EventHub. All Rights Reserved.</p>
+</footer>
+
+<script src="js/booking.js"></script>
+
+</body>
+</html>
