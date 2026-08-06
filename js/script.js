@@ -66,3 +66,30 @@ if(searchInput){
     });
 
 }
+
+// Scroll To Top
+
+const topBtn = document.getElementById("topBtn");
+
+if(topBtn){
+
+    window.addEventListener("scroll", () => {
+
+        if(window.scrollY > 50){
+            topBtn.style.display = "block";
+        }else{
+            topBtn.style.display = "none";
+        }
+
+    });
+
+    topBtn.addEventListener("click", () => {
+
+        window.scrollTo({
+            top:0,
+            behavior:"smooth"
+        });
+
+    });
+
+}
