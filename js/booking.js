@@ -33,8 +33,11 @@ bookingForm.addEventListener("submit", function(event) {
 button.textContent = "Booking Confirmed ✓";
 button.style.backgroundColor = "green";
 
-alert("🎉 Booking Successful!");
+document.getElementById("confirmName").textContent = name;
+document.getElementById("confirmEvent").textContent = eventName;
+document.getElementById("confirmTickets").textContent = tickets;
 
+document.getElementById("successMessage").style.display = "block";
 bookingForm.reset();
 
 setTimeout(() => {
@@ -42,3 +45,7 @@ setTimeout(() => {
     button.style.backgroundColor = "";
 }, 3000);
 });
+
+function closeMessage() {
+    document.getElementById("successMessage").style.display = "none";
+}

@@ -562,3 +562,27 @@ textarea{
 .search-box input:focus{
     box-shadow:0 0 12px rgba(37,99,235,.3);
 }
+
+/* Booking Success Message */
+
+.success-message{
+    display:none;
+    max-width:500px;
+    margin:40px auto;
+    background:#ecfdf5;
+    border-left:6px solid #22c55e;
+    padding:30px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+}
+
+.success-message h2{
+    color:#15803d;
+    margin-bottom:15px;
+}
+
+.success-message p{
+    margin:10px 0;
+    color:#374151;
+}
