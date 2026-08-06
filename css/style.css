@@ -1,3 +1,7 @@
+html{
+    scroll-behavior:smooth;
+}
+
 /* Reset */
 * {
     margin: 0;
@@ -321,4 +325,39 @@ textarea{
 .seats{
     color:#dc2626;
     font-weight:bold;
+}
+
+/* Statistics */
+
+.stats{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    flex-wrap:wrap;
+    padding:80px 10%;
+    background:#f8fafc;
+}
+
+.stat-box{
+    background:white;
+    width:220px;
+    padding:30px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.stat-box:hover{
+    transform:translateY(-8px);
+}
+
+.stat-box h2{
+    color:#2563eb;
+    font-size:38px;
+    margin-bottom:10px;
+}
+
+.stat-box p{
+    color:#555;
 }
