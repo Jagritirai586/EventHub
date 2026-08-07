@@ -93,3 +93,31 @@ if(topBtn){
     });
 
 }
+
+// Category Filter
+
+const filterButtons = document.querySelectorAll(".filter-btn");
+
+filterButtons.forEach(button => {
+
+    button.addEventListener("click", () => {
+
+        document.querySelector(".active-filter")?.classList.remove("active-filter");
+
+        button.classList.add("active-filter");
+
+        const filter = button.dataset.filter;
+
+        document.querySelectorAll(".event-card").forEach(card => {
+
+            if(filter === "all" || card.dataset.category === filter){
+                card.style.display = "block";
+            }else{
+                card.style.display = "none";
+            }
+
+        });
+
+    });
+
+});

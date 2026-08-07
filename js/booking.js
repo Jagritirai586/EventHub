@@ -49,4 +49,3 @@ setTimeout(() => {
 function closeMessage() {
     document.getElementById("successMessage").style.display = "none";
 }
-<button id="topBtn" title="Go to top">↑</button>
