@@ -121,3 +121,26 @@ filterButtons.forEach(button => {
     });
 
 });
+
+// Event Countdown
+
+const countdowns = document.querySelectorAll(".countdown");
+
+countdowns.forEach(item => {
+
+    const eventDate = new Date(item.dataset.date);
+    const today = new Date();
+
+    const diff = eventDate - today;
+
+    const days = Math.ceil(diff / (1000 * 60 * 60 * 24));
+
+    if(days > 0){
+        item.textContent = `⏳ ${days} Days Left`;
+    }else if(days === 0){
+        item.textContent = "🎉 Event Today";
+    }else{
+        item.textContent = "✅ Event Completed";
+    }
+
+});

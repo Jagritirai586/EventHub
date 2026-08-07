@@ -777,3 +777,16 @@ nav ul li a.active:hover{
     background:#facc15;
     color:#111827;
 }
+
+/* Event Countdown */
+
+.countdown{
+    color:#dc2626;
+    font-weight:bold;
+    margin:8px 0;
+    font-size:15px;
+}
+
+.dark-mode .countdown{
+    color:#f87171;
+}
